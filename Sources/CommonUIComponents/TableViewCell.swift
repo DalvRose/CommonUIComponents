@@ -2,7 +2,7 @@
 #if os(iOS)
 import UIKit
 
-public class TableViewCell: UITableViewCell {
+open class TableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -14,6 +14,6 @@ public class TableViewCell: UITableViewCell {
         commonInit()
     }
     
-    public func commonInit() {}
+    open func commonInit() {}
 }
 #endif

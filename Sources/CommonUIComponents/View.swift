@@ -2,7 +2,7 @@
 #if os(iOS)
 import UIKit
 
-public class View: UIView {
+open class View: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -14,6 +14,6 @@ public class View: UIView {
         commonInit()
     }
     
-    public func commonInit() {}
+    open func commonInit() {}
 }
 #endif

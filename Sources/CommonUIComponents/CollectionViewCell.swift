@@ -2,7 +2,7 @@
 #if os(iOS)
 import UIKit
 
-public class CollectionViewCell: UICollectionViewCell {
+open class CollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -14,6 +14,6 @@ public class CollectionViewCell: UICollectionViewCell {
         commonInit()
     }
     
-    public func commonInit() {}
+    open func commonInit() {}
 }
 #endif

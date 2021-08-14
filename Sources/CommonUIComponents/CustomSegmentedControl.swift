@@ -2,11 +2,11 @@
 #if os(iOS)
 import UIKit
 
-public protocol CustomSegmentedControlDelegate: AnyObject {
+open protocol CustomSegmentedControlDelegate: AnyObject {
     func change(to index:Int)
 }
 
-public class CustomSegmentedControl: UIView {
+open class CustomSegmentedControl: UIView {
     private var buttonTitles:[String]!
     private var buttons: [UIButton]!
     private var selectorView: UIView!
@@ -17,7 +17,7 @@ public class CustomSegmentedControl: UIView {
     
     weak var delegate:CustomSegmentedControlDelegate?
     
-    public private(set) var selectedIndex : Int = 0
+    open private(set) var selectedIndex : Int = 0
     
     convenience init(frame:CGRect,buttonTitle:[String]) {
         self.init(frame: frame)
@@ -63,7 +63,7 @@ public class CustomSegmentedControl: UIView {
 }
 
 //Configuration View
-public extension CustomSegmentedControl {
+open extension CustomSegmentedControl {
     private func updateView() {
         createButton()
         configSelectorView()
