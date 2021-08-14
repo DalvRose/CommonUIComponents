@@ -14,6 +14,6 @@ public class TableViewCell: UITableViewCell {
         commonInit()
     }
     
-    func commonInit() {}
+    public func commonInit() {}
 }
 #endif

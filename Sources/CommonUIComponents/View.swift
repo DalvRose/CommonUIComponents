@@ -14,6 +14,6 @@ public class View: UIView {
         commonInit()
     }
     
-    func commonInit() {}
+    public func commonInit() {}
 }
 #endif

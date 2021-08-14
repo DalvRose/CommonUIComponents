@@ -14,6 +14,6 @@ public class CollectionViewCell: UICollectionViewCell {
         commonInit()
     }
     
-    func commonInit() {}
+    public func commonInit() {}
 }
 #endif
