@@ -24,7 +24,7 @@ public class CustomSegmentedControl: UIView {
         self.buttonTitles = buttonTitle
     }
     
-    override func draw(_ rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
         super.draw(rect)
         self.backgroundColor = UIColor.white
         updateView()
